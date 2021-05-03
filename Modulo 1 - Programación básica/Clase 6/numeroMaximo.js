@@ -6,3 +6,21 @@
 • Analizar cómo cambia el programa para hallar el mínimo
 */
 
+let readlinesync = require("readline-sync");
+let valor = readlinesync.questionInt("Introduzca un valor: ");
+let max = 0 , min = 0 ;
+
+while (valor != 0) {
+    valor = readlinesync.questionInt(" introduzca un valor: ");
+    if (valor > max) {
+       max = valor;
+     }
+     else if ( valor < 0){
+        min = valor;
+    }
+}   
+console.log("el numero maximo fue: ", max);
+console.log("el numero minimo fue: ", min);
+
+
+
